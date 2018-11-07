@@ -19,7 +19,6 @@ public:
 		void ones();
 		int getRows() const;
 		int getCols() const;
-		void imprimir();
 	//Sobrecarga de Operadores
 		Matriz& operator=(const Matriz&);
 		Matriz& operator*=(const int &right);
