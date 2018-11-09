@@ -40,6 +40,9 @@ int main() {
 		switch (keep) {
 			case 1:
 				cin >> X;
+				cout << endl << "Numero de Linhas de X: " << X.getRows() << endl << "Numero de Colunas de X: " << X.getCols()<<endl;
+				cout <<endl<<"X:"<<endl<< X;
+				break;
 			case 2:
 				cout << "A:" << endl << A << endl;
 				cout << "B:" << endl << B << endl;
