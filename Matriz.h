@@ -13,7 +13,7 @@ public:
 		Matriz(int linhas =0, int colunas= 0,const double &valor = 0);
 		Matriz(const Matriz &m);
 		~Matriz();
-	//Funções Membro
+	//FunÃ§Ãµes Membro
 		void unit();
 		void zeros();
 		void ones();
@@ -25,14 +25,14 @@ public:
 		Matriz& operator+=(const Matriz&);
 		Matriz& operator-=(const Matriz&);
 		Matriz& operator*=(const Matriz&);
-		Matriz operator+(const Matriz&);
-		Matriz operator-(const Matriz&);
-		Matriz operator~();
+		Matriz operator+(const Matriz&) const;
+		Matriz operator-(const Matriz&) const;
+		Matriz operator~() const;
 		Matriz operator*(const Matriz&);
 
-		bool operator==(const Matriz&);
-		bool operator!=(const Matriz&);
-		double& operator()(const int &linhas, const int &colunas);
+		bool operator==(const Matriz&) const;
+		bool operator!=(const Matriz&) const;
+		double& operator()(const int &linhas, const int &colunas) const;
 
 		friend istream& operator>>(istream&, Matriz&);
 		friend ostream& operator<<(ostream&, const Matriz&);
